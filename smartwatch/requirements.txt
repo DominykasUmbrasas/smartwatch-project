@@ -1,0 +1,7 @@
+adafruit-circuitpython-dht
+board
+flask
+pigpio
+requests
+SpeechRecognition
+PyAudio

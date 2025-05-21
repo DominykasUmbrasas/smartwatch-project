@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>Išmanus Laikrodis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class = "scroll-pos all-screan"></div>
+    <div class = "screan-brightness all-screan"></div>
+    <div class = "screan-voice all-screan"></div>
+    <div class="scroll-container interactive">
+        <div class="main-background" id="mani-page-1">
+            <div class="clock-face">
+                <div class="clock-hms" id ="clock-h">
+                    <div class="clock-h-default" id="clock-h-1">01</div><div class="clock-h-default" id="clock-h-2">02</div><div class="clock-h-default" id="clock-h-3">03</div>
+                    <div class="clock-h-default" id="clock-h-4">04</div>
+                    <div class="clock-h-default" id="clock-h-5">05</div><div class="clock-h-default" id="clock-h-6">06</div><div class="clock-h-default" id="clock-h-7">07</div><div class="clock-h-default" id="clock-h-8">08</div>
+                </div>
+                <div class="clock-hms" id ="clock-m">
+                    <div class="clock-m-default" id="clock-m-1">01</div><div class="clock-m-default" id="clock-m-2">02</div><div class="clock-m-default" id="clock-m-3">03</div><div class="clock-m-default" id="clock-m-4">04</div>
+                    <div class="clock-m-default" id="clock-m-5">05</div>
+                    <div class="clock-m-default" id="clock-m-6">06</div><div class="clock-m-default" id="clock-m-7">07</div><div class="clock-m-default" id="clock-m-8">08</div><div class="clock-m-default" id="clock-m-9">09</div><div class="clock-m-default" id="clock-m-10">10</div>
+                </div>
+                <div class="clock-hms" id ="clock-s">
+                    <div class="clock-s-default" id="clock-s-1">01</div><div class="clock-s-default" id="clock-s-2">02</div><div class="clock-s-default" id="clock-s-3">03</div><div class="clock-s-default" id="clock-s-4">04</div><div class="clock-s-default" id="clock-s-5">05</div>
+                    <div class="clock-s-default" id="clock-s-6">06</div>
+                    <div class="clock-s-default" id="clock-s-7">07</div><div class="clock-s-default" id="clock-s-8">08</div><div class="clock-s-default" id="clock-s-9">09</div><div class="clock-s-default" id="clock-s-10">10</div><div class="clock-s-default" id="clock-s-11">11</div><div class="clock-s-default" id="clock-s-12">12</div>
+                </div>
+            </div>
+            
+            <div class="date-face">
+                <div class="date-month-day">January 1</div>
+                <div class="date-year">2025</div>
+            </div>
+        </div>
+        <div class="main-background" id="mani-page-2">
+            <div class="weather-day-container weather-container">
+                <div class="weather-day-face">
+                    <div class="weather-day                 "><div class="weather-day-data"><div class="weather-day-wind w-d">00.0 m/s</div><div class="weather-day-temp w-d">-12.0 C°</div><div class="weather-day-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="weather-day-time w-d">00:00</div></div></div>
+                    <div class="weather-day                 "><div class="weather-day-data"><div class="weather-day-wind w-d">12.5 m/s</div><div class="weather-day-temp w-d">-12.0 C°</div><div class="weather-day-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="weather-day-time w-d">00:00</div></div></div>
+                    <div class="weather-day                 "><div class="weather-day-data"><div class="weather-day-wind w-d">12.5 m/s</div><div class="weather-day-temp w-d">-12.0 C°</div><div class="weather-day-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="weather-day-time w-d">00:00</div></div></div>
+                    <div class="weather-day                 "><div class="weather-day-data"><div class="weather-day-wind w-d">12.5 m/s</div><div class="weather-day-temp w-d">-12.0 C°</div><div class="weather-day-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="weather-day-time w-d">00:00</div></div></div>
+                    <div class="weather-day                 "><div class="weather-day-data"><div class="weather-day-wind w-d">12.5 m/s</div><div class="weather-day-temp w-d">-12.0 C°</div><div class="weather-day-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="weather-day-time w-d">00:00</div></div></div>
+                    <div class="weather-day                 "><div class="weather-day-data"><div class="weather-day-wind w-d">12.5 m/s</div><div class="weather-day-temp w-d">-12.0 C°</div><div class="weather-day-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="weather-day-time w-d">00:00</div></div></div>
+                    <div class="weather-day                 "><div class="weather-day-data"><div class="weather-day-wind w-d">12.5 m/s</div><div class="weather-day-temp w-d">-12.0 C°</div><div class="weather-day-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="weather-day-time w-d">00:00</div></div></div>
+                    <div class="weather-day                 "><div class="weather-day-data"><div class="weather-day-wind w-d">12.5 m/s</div><div class="weather-day-temp w-d">-12.0 C°</div><div class="weather-day-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="weather-day-time w-d">00:00</div></div></div>
+                    <div class="weather-day weather-day-last"><div class="weather-day-data"><div class="weather-day-wind w-d">12.5 m/s</div><div class="weather-day-temp w-d">-12.0 C°</div><div class="weather-day-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="weather-day-time w-d">00:00</div></div></div>
+                    <div id="weather-day-graph"></div>
+                </div>
+            </div>
+            <div class="weather-room-container weather-container">
+                <div class="w-r-name">Room</div>
+                <div class="w-r-data">
+                    <div class="w-r-d w-r-d-name">Temperature:</div><div class="w-r-d w-r-d-d">23.4 C°</div>
+                    <div class="w-r-d w-r-d-name">Humidity:</div><div class="w-r-d w-r-d-d">28.9 %</div>
+                </div>
+            </div>
+            <div class="weather-week-container weather-container">
+                <div class="weather-week-day"><div class="w-w-d w-w-name">Tue</div><div class="w-w-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-d w-w-dn w-w-da"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div><div class="w-w-d w-w-dn w-w-ni"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/0.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div></div>
+                <div class="weather-week-day"><div class="w-w-d w-w-name">Tue</div><div class="w-w-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-d w-w-dn w-w-da"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div><div class="w-w-d w-w-dn w-w-ni"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/0.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div></div>
+                <div class="weather-week-day"><div class="w-w-d w-w-name">Tue</div><div class="w-w-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-d w-w-dn w-w-da"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div><div class="w-w-d w-w-dn w-w-ni"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/0.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div></div>
+                <div class="weather-week-day"><div class="w-w-d w-w-name">Tue</div><div class="w-w-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-d w-w-dn w-w-da"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div><div class="w-w-d w-w-dn w-w-ni"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/0.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div></div>
+                <div class="weather-week-day"><div class="w-w-d w-w-name">Tue</div><div class="w-w-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-d w-w-dn w-w-da"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div><div class="w-w-d w-w-dn w-w-ni"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/0.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div></div>
+                <div class="weather-week-day"><div class="w-w-d w-w-name">Tue</div><div class="w-w-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-d w-w-dn w-w-da"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div><div class="w-w-d w-w-dn w-w-ni"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/0.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div></div>
+                <div class="weather-week-day"><div class="w-w-d w-w-name">Tue</div><div class="w-w-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-d w-w-dn w-w-da"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/1.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div><div class="w-w-d w-w-dn w-w-ni"><div class="w-w-svg-dn svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/0.svg') }}"></div><div class="w-w-data w-w-temp">12.5 C°</div><div class="w-w-data w-w-precip">12.5 %</div><div class="w-w-data w-w-wind">12.5 m/s</div></div></div>
+            </div>
+        </div>
+        <div class="main-background" id="mani-page-3">            
+            <h3 id="now-playing">.</h3>
+            <div class="controls-container">
+                <input type="text" id="song-search" placeholder="Įveskite dainos pavadinimą..." class="btn-interactive">
+                <div id="search-btn" class="youtube-svg btn-interactive svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/search.svg') }}"></div>
+                
+            </div>
+            
+            <div class="btn-interactive" id="player"></div>
+            <div class="controls-container">
+                <div id="prev-btn"       class="youtube-svg btn-interactive svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/arrows.svg') }}"></div>
+                <div id="play-pause-btn" class="youtube-svg btn-interactive svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/stop.svg') }}"></div>
+                <div id="next-btn"       class="youtube-svg btn-interactive svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/arrows.svg') }}"></div>                
+            </div>            
+        </div>
+        <div class="main-background" id="mani-page-4">
+            <div class="remote-container">
+                <div class="remote-3x3">
+                    <div class="btn-interactive remote-btn remote-btn-3x3" id="button_1">01</div>
+                    <div class="btn-interactive remote-btn remote-btn-3x3" id="button_2">02</div>
+                    <div class="btn-interactive remote-btn remote-btn-3x3" id="button_3">03</div>
+                    <div class="btn-interactive remote-btn remote-btn-3x3" id="button_4">04</div>
+                    <div class="btn-interactive remote-btn remote-btn-3x3" id="button_5">05</div>
+                    <div class="btn-interactive remote-btn remote-btn-3x3" id="button_6">06</div>
+                    <div class="btn-interactive remote-btn remote-btn-3x3" id="button_7">07</div>
+                    <div class="btn-interactive remote-btn remote-btn-3x3" id="button_8">08</div>
+                    <div class="btn-interactive remote-btn remote-btn-3x3" id="button_9">09</div>
+                </div>
+                <div class="remote-1x5">
+                    <div class="btn-interactive remote-btn remote-btn-1x5" id="button_a1">A1</div>
+                    <div class="btn-interactive remote-btn remote-btn-1x5" id="button_a2">A2</div>
+                    <div class="btn-interactive remote-btn remote-btn-1x5" id="button_a3">A3</div>
+                    <div class="btn-interactive remote-btn remote-btn-1x5" id="button_a4">A4</div>
+                    <div class="btn-interactive remote-btn remote-btn-1x5" id="button_a5">A5</div>
+                </div>
+                <div class="remote-controler">
+                    <div class="btn-interactive remote-btn remote-btn-sr remote-btn-set-ir">Set<br>IR signal</div>
+                    <div class="btn-interactive remote-btn remote-btn-sr remote-btn-remove-ir">Remove<br>IR signal</div>
+                </div>
+            </div>
+            <div class="timer-container t-a-c">
+                <div class="timer">00:00:00</div>
+                <div class="timer-btn-container">
+                    <div id="start-btn" class="timer-svg btn-interactive svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/play.svg') }}"></div>
+                    <div id="pouse-btn" class="timer-svg btn-interactive svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/stop.svg') }}"></div>
+                    <div id="stop-btn"  class="timer-svg btn-interactive svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/cancel.svg') }}"></div> 
+                </div>
+            </div>
+            <div class="alarm-container t-a-c"></div>
+            <div class="settings-container">
+                <div class="settings-top btn-interactive" id = "settings-btn">
+                    <div class="settings-icon-container svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/settings.svg') }}"></div>
+                    <div class="settings-top-right">Settings</div>
+                </div>
+                <div class="setting-container">
+                    <div class="btn-interactive setting-name palettes">Palets</div>
+                    <div class="setting-options-container">
+                        <div class="btn-interactive setting" id="setting-palets-1"></div>
+                        <div class="btn-interactive setting" id="setting-palets-2"></div>
+                        <div class="btn-interactive setting" id="setting-palets-3"></div>
+                        <div class="btn-interactive setting" id="setting-palets-4"></div>
+                        <div class="btn-interactive setting" id="setting-palets-5"></div>
+                        <div class="btn-interactive setting" id="setting-palets-6"></div>
+                    </div>
+                </div>
+                <div class="setting-container">
+                    <div class="btn-interactive setting-name fonts">Fonts</div>
+                    <div class="setting-options-container">
+                        <div class="btn-interactive setting font" id="setting-fonts-1">Hello world</div>
+                        <div class="btn-interactive setting font" id="setting-fonts-2">Hello world</div>
+                        <div class="btn-interactive setting font" id="setting-fonts-3">Hello world</div>
+                        <div class="btn-interactive setting font" id="setting-fonts-4">Hello world</div>
+                    </div>
+                </div>
+                <div class="setting-container">
+                    <div class="btn-interactive setting-name language">Language</div>
+                    <div class="setting-options-container">
+                        <div class="btn-interactive setting" id="setting-lang-lt">Lietuvių</div>
+                        <div class="btn-interactive setting" id="setting-lang-en">English</div>
+                    </div>
+                </div>
+                <div class="setting-container">
+                    <div class="btn-interactive setting-name privacy">Privacy</div>
+                    <div class="setting-options-container">
+                        <div class="btn-interactive setting privacy-toggle" id="setting-privacy-toggle">On/Off Mic</div>
+                        <div class="mic-svg-div">
+                            <div class="mic-svg svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/mic_on.svg') }}"></div>
+                            <div class="mic-svg mic-svg-line svg-placeholder" data-src="{{ url_for('static', filename='assets/svg/mic_off_line.svg') }}"></div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-container">
+                    <div class="btn-interactive setting-name brightness">Brightness</div>
+                    <div class="setting-options-container setting-options-container-slider">
+                        <div class=" btn-interactive setting slider-container">
+                            <input type="range" min="0.2" max="1.0" step="0.01" value="1.0" id="brightness-slider">
+                        </div>
+                    </div>
+                </div>
+                <div class="shutdown-svg btn-interactive svg-placeholder" onclick="window.close()" data-src="{{ url_for('static', filename='assets/svg/shutdown.svg') }}"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/languages.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
